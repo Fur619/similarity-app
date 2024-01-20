@@ -1,36 +1,41 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# Similarity API
+A complete API key system to create & revoke user keys
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+NextJS Client & Server Components
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Rate Limited API routes
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Protection of sensitive routes
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Google authentication
 
-## Learn More
+Typescript
 
-To learn more about Next.js, take a look at the following resources:
+Radix UI Primitives
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Tailwind CSS
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Fonts with next/font
 
-## Deploy on Vercel
+Icons from Lucide
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Beautiful dark mode with next-themes
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Class merging with taiwind-merge
+
+Animation with tailwindcss-animate
+
+Conditional classes with clsx
+
+Variants with class-variance-authority
+
+Super fast Planetscale database
+
+## Tech used
+Next, Typescript, Prisma, MySql, Next Auth, Next Themes, Material UI Grid, Radix UI, Upstash Redis, clsx, Class variance authority, Tailwind merge, date-fns, lucide react, openai, prism react render,zod
+
+## Live URL
+https://fq-similarity-api.vercel.app/

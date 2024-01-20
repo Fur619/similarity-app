@@ -1,9 +1,11 @@
-import { Inter } from 'next/font/google'
-import '@/styles/globals.css'
-import { cn } from '@/lib/utils'
-import Providers from '@/components/Providers'
 import Navbar from '@/components/Navbar'
-import { Toaster } from '@/components/ui/Toast'
+import { Toaster } from '@/components/ui/toast'
+import '@/styles/globals.css'
+import { Inter } from 'next/font/google'
+
+import MobileMenu from '@/components/MobileMenu'
+import Providers from '@/components/Providers'
+import { cn } from '@/lib/utils'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -13,15 +15,19 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={cn('bg-white text-slate-900 antialiased', inter.className)}>
-      <body className={"min-h-screen bg-slate-50 dark:bg-slate-900 antialiased"}>
+    <html
+      lang='en'
+      className={cn('bg-white text-slate-900 antialiased', inter.className)}>
+      <body className='min-h-screen bg-slate-50 dark:bg-slate-900 antialiased'>
         <Providers>
-          {children}
-          <Toaster position='bottom-right'/>
           <Navbar />
+          <Toaster position='bottom-right' />
+          <MobileMenu />
+
+          <main>{children}</main>
         </Providers>
 
-        {/* Allow for more height on mobile devices */}
+        {/* Allow more height for mobile menu on mobile */}
         <div className='h-40 md:hidden' />
       </body>
     </html>
